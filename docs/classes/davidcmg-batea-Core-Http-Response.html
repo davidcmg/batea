@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BATEA Backup</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">BATEA Backup</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/davidcmg.html"><abbr title="\davidcmg">davidcmg</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/davidcmg-batea.html"><abbr title="\davidcmg\batea">batea</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../graphs/classes.html">Class Diagram</a></h2>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/davidcmg.html">davidcmg</a></li>
+                    <li><a href="../namespaces/davidcmg-batea.html">batea</a></li>
+                    <li><a href="../namespaces/davidcmg-batea-core.html">Core</a></li>
+                    <li><a href="../namespaces/davidcmg-batea-core-http.html">Http</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            Response
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">10</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Sencilla implementación de HTTP Response.</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#property_http_codes">$http_codes</a></th>
+                    <td class="phpdocumentor-cell">HTTP Status Codes.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#property_statusCode">$statusCode</a></th>
+                    <td class="phpdocumentor-cell">$statusCode.</td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#property_statusCodeText">$statusCodeText</a></th>
+                    <td class="phpdocumentor-cell">$statusCodeText.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#property_headers">$headers</a></th>
+                    <td class="phpdocumentor-cell">$headers.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#property_content">$content</a></th>
+                    <td class="phpdocumentor-cell">$content Contenido (body).</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_setStatusCode">setStatusCode()</a></th>
+                    <td class="phpdocumentor-cell">Establece el código de estatus.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_getStatusCode">getStatusCode()</a></th>
+                    <td class="phpdocumentor-cell">Retorna el código de status.</td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_getStatusCodeText">getStatusCodeText()</a></th>
+                    <td class="phpdocumentor-cell">Retorna la descripción del código HTTP.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_addHeader">addHeader()</a></th>
+                    <td class="phpdocumentor-cell">Añade una cabecera.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_getHeader">getHeader()</a></th>
+                    <td class="phpdocumentor-cell">Retorna una cabecera.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_getHeaders">getHeaders()</a></th>
+                    <td class="phpdocumentor-cell">Retorna todas las cabeceras.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_setContent">setContent()</a></th>
+                    <td class="phpdocumentor-cell">Establece el contenido de la respuesta (HTML).</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_getContent">getContent()</a></th>
+                    <td class="phpdocumentor-cell">Retorna el contenido de la respuesta (HTML).</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_print">print()</a></th>
+                    <td class="phpdocumentor-cell">Muestra la respuesta, primero la cabecera de la petición y a continuación
+el contenido.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_downloadLog">downloadLog()</a></th>
+                    <td class="phpdocumentor-cell">Permite la descarga de un log de una backup.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Core-Http-Response.html#method_downloadBackup">downloadBackup()</a></th>
+                    <td class="phpdocumentor-cell">Permite la descarga de un zip.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_http_codes"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$http_codes</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">19</span>
+    </aside>
+            <p class="phpdocumentor-summary">HTTP Status Codes.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">array</span>
+        <span class="phpdocumentor-signature__name">$http_codes</span>
+         = <span class="phpdocumentor-signature__default-value">[100 =&gt; &#039;Continue&#039;, 101 =&gt; &#039;Switching Protocols&#039;, 102 =&gt; &#039;Processing&#039;, 103 =&gt; &#039;Checkpoint&#039;, 200 =&gt; &#039;OK&#039;, 201 =&gt; &#039;Created&#039;, 202 =&gt; &#039;Accepted&#039;, 203 =&gt; &#039;Non-Authoritative Information&#039;, 204 =&gt; &#039;No Content&#039;, 205 =&gt; &#039;Reset Content&#039;, 206 =&gt; &#039;Partial Content&#039;, 207 =&gt; &#039;Multi-Status&#039;, 300 =&gt; &#039;Multiple Choices&#039;, 301 =&gt; &#039;Moved Permanently&#039;, 302 =&gt; &#039;Found&#039;, 303 =&gt; &#039;See Other&#039;, 304 =&gt; &#039;Not Modified&#039;, 305 =&gt; &#039;Use Proxy&#039;, 306 =&gt; &#039;Switch Proxy&#039;, 307 =&gt; &#039;Temporary Redirect&#039;, 400 =&gt; &#039;Bad Request&#039;, 401 =&gt; &#039;Unauthorized&#039;, 402 =&gt; &#039;Payment Required&#039;, 403 =&gt; &#039;Forbidden&#039;, 404 =&gt; &#039;Not Found&#039;, 405 =&gt; &#039;Method Not Allowed&#039;, 406 =&gt; &#039;Not Acceptable&#039;, 407 =&gt; &#039;Proxy Authentication Required&#039;, 408 =&gt; &#039;Request Timeout&#039;, 409 =&gt; &#039;Conflict&#039;, 410 =&gt; &#039;Gone&#039;, 411 =&gt; &#039;Length Required&#039;, 412 =&gt; &#039;Precondition Failed&#039;, 413 =&gt; &#039;Request Entity Too Large&#039;, 414 =&gt; &#039;Request-URI Too Long&#039;, 415 =&gt; &#039;Unsupported Media Type&#039;, 416 =&gt; &#039;Requested Range Not Satisfiable&#039;, 417 =&gt; &#039;Expectation Failed&#039;, 418 =&gt; &#039;I\&#039;m a teapot&#039;, 422 =&gt; &#039;Unprocessable Entity&#039;, 423 =&gt; &#039;Locked&#039;, 424 =&gt; &#039;Failed Dependency&#039;, 425 =&gt; &#039;Unordered Collection&#039;, 426 =&gt; &#039;Upgrade Required&#039;, 449 =&gt; &#039;Retry With&#039;, 450 =&gt; &#039;Blocked by Windows Parental Controls&#039;, 500 =&gt; &#039;Internal Server Error&#039;, 501 =&gt; &#039;Not Implemented&#039;, 502 =&gt; &#039;Bad Gateway&#039;, 503 =&gt; &#039;Service Unavailable&#039;, 504 =&gt; &#039;Gateway Timeout&#039;, 505 =&gt; &#039;HTTP Version Not Supported&#039;, 506 =&gt; &#039;Variant Also Negotiates&#039;, 507 =&gt; &#039;Insufficient Storage&#039;, 509 =&gt; &#039;Bandwidth Limit Exceeded&#039;, 510 =&gt; &#039;Not Extended&#039;]</span>    </code>
+    </article>
+                                    <a id="property_statusCode"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$statusCode</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">83</span>
+    </aside>
+            <p class="phpdocumentor-summary">$statusCode.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__name">$statusCode</span>
+            </code>
+    </article>
+                                    <a id="property_statusCodeText"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$statusCodeText</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">90</span>
+    </aside>
+            <p class="phpdocumentor-summary">$statusCodeText.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$statusCodeText</span>
+            </code>
+    </article>
+                                    <a id="property_headers"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$headers</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">97</span>
+    </aside>
+            <p class="phpdocumentor-summary">$headers.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">array</span>
+        <span class="phpdocumentor-signature__name">$headers</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+    </article>
+                                    <a id="property_content"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$content</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">104</span>
+    </aside>
+            <p class="phpdocumentor-summary">$content Contenido (body).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$content</span>
+            </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method_setStatusCode"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setStatusCode()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">113</span>
+    </aside>
+        <p class="phpdocumentor-summary">Establece el código de estatus.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setStatusCode</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$statusCode</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$statusCode</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+    
+</article>
+                                    <a id="method_getStatusCode"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getStatusCode()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">124</span>
+    </aside>
+        <p class="phpdocumentor-summary">Retorna el código de status.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getStatusCode</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">int</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            
+</article>
+                                    <a id="method_getStatusCodeText"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getStatusCodeText()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">134</span>
+    </aside>
+        <p class="phpdocumentor-summary">Retorna la descripción del código HTTP.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getStatusCodeText</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_addHeader"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">addHeader()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">147</span>
+    </aside>
+        <p class="phpdocumentor-summary">Añade una cabecera.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">addHeader</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$val</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$val</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+    
+</article>
+                                    <a id="method_getHeader"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getHeader()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">159</span>
+    </aside>
+        <p class="phpdocumentor-summary">Retorna una cabecera.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getHeader</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_getHeaders"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getHeaders()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">169</span>
+    </aside>
+        <p class="phpdocumentor-summary">Retorna todas las cabeceras.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getHeaders</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                                    <a id="method_setContent"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setContent()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">186</span>
+    </aside>
+        <p class="phpdocumentor-summary">Establece el contenido de la respuesta (HTML).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setContent</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$body</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$body</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+    
+</article>
+                                    <a id="method_getContent"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getContent()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">196</span>
+    </aside>
+        <p class="phpdocumentor-summary">Retorna el contenido de la respuesta (HTML).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getContent</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_print"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">print()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">207</span>
+    </aside>
+        <p class="phpdocumentor-summary">Muestra la respuesta, primero la cabecera de la petición y a continuación
+el contenido.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">print</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+    
+        
+    
+</article>
+                                    <a id="method_downloadLog"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">downloadLog()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">221</span>
+    </aside>
+        <p class="phpdocumentor-summary">Permite la descarga de un log de una backup.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">downloadLog</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$file</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>El navegador guarda el archivo.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$file</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+    
+</article>
+                                    <a id="method_downloadBackup"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">downloadBackup()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Core/Http/Response.php"><a href="../files/src-core-http-response.html"><abbr title="src/Core/Http/Response.php">Response.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">244</span>
+    </aside>
+        <p class="phpdocumentor-summary">Permite la descarga de un zip.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">downloadBackup</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$file</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$file</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+    
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

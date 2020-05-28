@@ -1,0 +1,9 @@
+keys/
+vendor/
+node_modules/
+storage/logs/
+storage/backups/
+config/Config.php
+storage/db.dev.sqlite
+composer.lock
+package-lock.json

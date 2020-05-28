@@ -1,0 +1,28 @@
+[#partials/admin-head.html]
+[#partials/admin-navbar.html]
+        <div id="wrapper">
+            <!-- Sidebar -->
+            [#/partials/admin-sidebar.html]
+            <!-- Tools -->
+            [#/partials/admin-tools.html]
+            <!-- Content -->
+            <div id="content">
+                <?php getMessage(); ?>
+                <div class="card">
+                    <div class="card-header"> 
+                        <i class='bx bx-search' ></i>
+                        Usuario [@id]
+                    </div>
+                    <div class="card-body">
+                            <div class="form-group">
+                                <label for="username">Nombre de usuario</label>
+                                <input type="text" class="form-control" name ="username" id="username" value="[@username]" disabled>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- Javascripts -->
+[#partials/admin-footer.html]

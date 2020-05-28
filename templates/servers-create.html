@@ -1,0 +1,44 @@
+[#partials/admin-head.html]
+[#partials/admin-navbar.html]
+        <div id="wrapper">
+            <!-- Sidebar -->
+            [#/partials/admin-sidebar.html]
+            <!-- Content -->
+            <div id="content">
+                <?php getMessage(); ?>
+                <div class="card">
+                    <div class="card-header"> 
+                        <i class='bx bxs-plus-square' ></i>
+                        Nuevo server
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="/admin/servers/create" >
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="host">Host</label>
+                                    <input type="text" class="form-control" name ="host" id="host" placeholder="Host">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="ip">Puerto</label>
+                                    <input type="number" class="form-control" name ="port" id="port" value="22" min="0" step="1">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="user">Nombre de usuario</label>
+                                    <input type="text" class="form-control" name ="user" id="user" placeholder="Nombre de usuario">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" class="form-control" name ="password" id="password" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <button type='submit' class='btn btn-primary justify-content-center'>Crear</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- Javascripts -->
+[#partials/admin-footer.html]

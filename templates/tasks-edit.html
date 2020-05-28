@@ -1,0 +1,74 @@
+[#partials/admin-head.html]
+[#partials/admin-navbar.html]
+        <div id="wrapper">
+            <!-- Sidebar -->
+            [#/partials/admin-sidebar.html]
+            <!-- Content -->
+            <div id="content">
+                <?php getMessage(); ?>
+                <div class="card">
+                    <div class="card-header"> 
+                        <i class='bx bxs-plus-square' ></i>
+                        Editar tarea [@id]
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="/admin/tasks/[@id]/edit" >
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" name ="name" id="name" placeholder="Nombre para la tarea" value="[@name]" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Notificar</label>
+                                    <input type="email" class="form-control" name ="email" id="email" placeholder="Notificar a correo" value="[@email]">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="server">Servidor</label>
+                                    <select class="form-control" id="server" name="server" disabled required>
+                                        <option>[@host]</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="source">Origen</label>
+                                    <input type="text" class="form-control" name ="source" id="source" placeholder="/origen/del/backup/" value="[@source]" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="cron">Programación</label>
+                                    <div class="jqCron text-small"></div>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="cron"> </label>
+                                    <input type="text" class="form-control jqCron-input" name ="cron" id="cron" value="[@cron]" aria-describedby="cronHelp" required>
+                                    <small id="cronHelp" class="form-text text-muted">
+<pre>
+  * * * * *
+  │ | | | └─── semana (0-6)  0 = domingo
+  │ | | └───── mes    (1-12)
+  │ | └─────── dia    (1-31)
+  │ └───────── hora   (0-23)
+  └─────────── minuto (0-59)
+</pre>
+                                    </small>
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <label for="depth">Rotaciones</label>
+                                    <input type="number" class="form-control" name ="depth" id="depth" min="0" value="[@depth]" required>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="exclude">Archivos exluidos</label> <small class=" text-muted ">separados por comas</small>
+                                    <textarea class="form-control" id="exclude" name="exclude" rows="4">[@exclude]</textarea>
+                                </div>
+                            </div>
+                            <button type='submit' class='btn btn-primary justify-content-center'>Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- Javascripts -->
+[#partials/admin-footer.html]

@@ -1,0 +1,20 @@
+<section id="sidebar" class="position-fixed">
+    <ul id="dock">
+        <li class="launcher <?php isCurrentPage('/admin'); ?>">
+            <i class='bx bxs-package' ></i>
+            <a href="/admin">Backups</a>
+        </li>
+        <li class="launcher <?php isCurrentPage('/admin/servers'); ?>">
+            <i class='bx bx-server' ></i>
+            <a href="/admin/servers">Servidores</a>
+        </li>
+       <li class="launcher <?php isCurrentPage('/admin/tasks'); ?>">
+            <i class='bx bx-list-ul' ></i>
+            <a href="/admin/tasks">Tareas</a>
+        </li>
+        <li class="launcher <?php isCurrentPage('/admin/users'); ?>">
+            <i class='bx bxs-group' ></i>
+            <a href="/admin/users">Usuarios</a>
+        </li>
+    </ul>
+</section>

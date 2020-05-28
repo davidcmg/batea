@@ -1,0 +1,67 @@
+[#partials/admin-head.html]
+[#partials/admin-navbar.html]
+        <div id="wrapper">
+            <!-- Sidebar -->
+            [#partials/admin-sidebar.html]
+
+            <!-- Content -->
+            <div id="content">
+                
+                <div class="container-fluid">
+                  <div class="row">
+                    
+                    
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card card-system mb-3">
+                            <div class="card-body">
+                              <h5 class="card-title"><i class='bx bxs-buoy' ></i> [@hostname]</h5>
+                              <p class="card-text">Espacio libre [@free]</p>
+                              <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: [@diskProgress]%" aria-valuenow="[@diskProgress]" aria-valuemin="0" aria-valuemax="100">[@diskProgress]%</div>
+                              </div>
+                              <br/>
+                              <strong>Carga del sistema:</strong>
+                              <div class="row">
+                                <div class="col-md-4">Último minuto <span class="badge badge-light">[@load1]</span></div>
+                                <div class="col-md-4">Últimos 5 minutos <span class="badge badge-light">[@load1]</span></div>
+                                <div class="col-md-4">Últimos 15 minutos <span class="badge badge-light">[@load15]</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!--row-->
+                      <?php getMessage(); ?>
+                      [@html]
+                    </div>
+                  </div><!--row-->
+              </div><!--container fluid-->
+
+              <div class="modal fade" id="modalRestaurar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Restaurar copia de seguridad</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ¿Está seguro que desea restaurar esta copia de seguridad?  
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <form method="POST" action="" >
+                                <button type="submit" class="btn btn-danger">Restaurar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div><!--content-->
+        </div><!--wrapper-->
+        <!-- Footer -->
+        <!-- Javascripts -->
+[#partials/admin-footer.html]

@@ -1,0 +1,33 @@
+[#partials/head.html]
+<div id="login-page">
+    <div id="autor-foto">Photo by <a href="https://unsplash.com/@tvick">Taylor Vick</a> on <a href="https://unsplash.com/photos/M5tzZtFCOfs">Unsplash</a></div>
+    <div class="login-form">
+        <?php getMessage(); ?>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h1>
+                        <div class="login-logo">
+                            <img src="/img/logo.png"/>
+                        </div>
+                        [@title]
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <fieldset="text-center">
+                <form method="POST" action="/login" class="form-signin" class="form-horizontal">
+                <label class="mt-3">User</label>                        
+                <input name="username" type="text" class="form-control " placeholder="Username" required autofocus>
+                <label class="mt-3">Password</label>
+                <input name="password" type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">
+                        login
+                </button>
+            </form>
+            </fieldset>
+        </div>
+    </div>
+</div>
+[#partials/footer.html]

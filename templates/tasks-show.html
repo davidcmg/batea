@@ -1,0 +1,68 @@
+[#partials/admin-head.html]
+[#partials/admin-navbar.html]
+        <div id="wrapper">
+            <!-- Sidebar -->
+            [#/partials/admin-sidebar.html]
+            <!-- Content -->
+            <div id="content">
+                <?php getMessage(); ?>
+                <div class="card">
+                    <div class="card-header"> 
+                        <i class='bx bxs-plus-square' ></i>
+                        Tarea
+                    </div>
+                    <div class="card-body">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" name ="name" id="name" disabled value="[@name]">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Notificar</label>
+                                    <input type="email" class="form-control" name ="email" id="email" disabled value="[@email]">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="server">Servidor</label>
+                                    <select class="form-control" id="server" name="server" disabled>
+                                        <option>[@host]</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="source">Origen</label>
+                                    <input type="text" class="form-control" name ="source" id="source" disabled value="[@source]">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-2">
+                                    <label for="depth">Rotaciones</label>
+                                    <input type="number" class="form-control" name ="depth" id="depth" disabled value="[@depth]">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="cron">Programación</label>
+                                    <input type="text" class="form-control" name ="cron" id="cron" disabled value="[@cron]">
+                                    <small id="cronHelp" class="form-text text-muted">
+<pre>
+  * * * * *
+  │ | | | └─── semana (0-6)  0 = domingo
+  │ | | └───── mes    (1-12)
+  │ | └─────── dia    (1-31)
+  │ └───────── hora   (0-23)
+  └─────────── minuto (0-59)
+</pre>
+                                    </small>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="exclude">Archivos exluidos</label> <small class=" text-muted ">separados por comas</small>
+                                    <textarea class="form-control" id="exclude" name="exclude" rows="4" disabled>[@exclude]</textarea>
+                                </div>
+                            </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- Javascripts -->
+[#partials/admin-footer.html]

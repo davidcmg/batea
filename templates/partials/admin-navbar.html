@@ -1,0 +1,23 @@
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="/img/logo.png" width="30"  class="d-inline-block align-top" alt="">
+              Batea Backup
+            </a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link">
+                  Hora servidor: <span id="server-clock"><?php echo date('H:i:s'); ?></span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class='bx bx-user-circle' ></i> <?php echo \davidcmg\batea\Core\Auth::getUser()->username; ?>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    

@@ -1,0 +1,168 @@
+$ancho-lateral: 100px;
+$alto-navbar: 60px;
+$color-sidebar:#2c3e50;
+$color-navbar:#e9ecef;
+$color-sidebar-iconos:#7E93A8;
+$color-bg:#f4f6f9;
+$color-naranja:#f60;
+
+#server-clock {
+  font-family: 'Roboto Mono', monospace;
+}
+// Navbar
+#navbar {
+  height: $alto-navbar;
+  margin-left: $ancho-lateral;
+  .nav-item a {
+    color:rgba(0,0,0,.9);
+  }
+  .bg-light {
+    background: $color-navbar !important;
+  }
+}
+
+
+// Accordion
+#accordionServers{
+  .card {
+    border-color:$color-sidebar;
+    background-color: $color-navbar;
+  }
+  .card-header{
+    background-color: white !important;
+    button{
+      color:$color-sidebar;
+      font-weight: bold;
+    }
+    .float-right {
+      color:$color-sidebar;
+    }
+  }
+}
+
+.card-system{
+  color:white;
+  background: linear-gradient(45deg,$color-sidebar,$color-sidebar-iconos);
+}
+
+.table-dark:hover {
+  background-color:blue!important;
+}
+.dropdown-menu {
+  left: -60px !important;
+}
+
+#wrapper {
+  top:$alto-navbar;
+}
+#sidebar{
+  background-color: $color-sidebar;
+  width: $ancho-lateral;
+  text-align: center;
+}
+#sidebar, #content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#sidebar ul#dock {
+  padding: 0;
+  width: $ancho-lateral;
+  text-align: center;
+  color: $color-sidebar-iconos;
+}
+#sidebar ul#dock li.launcher {
+  list-style: none;
+  margin-top: 25px;
+}
+#sidebar ul#dock li.launcher > i {
+  display: block;
+  font-size: 3.5em;
+  margin-bottom: -2px;
+}
+#sidebar ul#dock li.launcher > a {
+  height: 36px;
+  display: block;
+  position: relative;
+  padding-top: 36px;
+  margin-top: -36px;
+  text-decoration: none;
+  color: $color-sidebar-iconos;
+  font-size: 0.9em;
+}
+li.launcher {
+  padding-bottom: 30px;
+}
+li.launcher.active::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color:$color-bg;
+  position: absolute;
+  right: -6px;
+  margin-top: 22px;
+}
+#content {
+  margin-top: $alto-navbar;
+  margin-bottom: 0;
+  background-color: $color-bg;
+  padding: 20px;
+  left: $ancho-lateral;
+}
+
+
+.login-form {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.3);
+  margin: 10% auto;
+  width: 300px;
+}
+.login-logo{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 15px;
+}
+.login-logo img{
+  max-width: 60px;
+}
+.server-accordion, .task-card {
+  margin-bottom: 7px;
+}
+.task-card {
+  background-color: white !important;
+  border-color: #90a0a1 !important;
+}
+.button[aria-expanded="true"]::after {
+	content: "\f106";
+}
+.button::after {
+	content: "\f107";
+	color: #333;
+	top: -2px;
+	right: 0px;
+	position: absolute;
+    font-family: "FontAwesome"
+}
+.button-accordion{
+  color:red;
+}
+
+
+
+[data-toggle="collapse"] .bx:before {
+  content: "\ee88";
+}
+
+[data-toggle="collapse"].collapsed .bx:before {
+  content: "\ed44";
+}

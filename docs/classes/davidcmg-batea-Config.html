@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BATEA Backup</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">BATEA Backup</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/davidcmg.html"><abbr title="\davidcmg">davidcmg</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/davidcmg-batea.html"><abbr title="\davidcmg\batea">batea</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../graphs/classes.html">Class Diagram</a></h2>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/davidcmg.html">davidcmg</a></li>
+                    <li><a href="../namespaces/davidcmg-batea.html">batea</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            Config
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">10</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Fichero de configuración.</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_APP_NAME">APP_NAME</a></th>
+                    <td class="phpdocumentor-cell">Nombre de la aplicación.</td>
+                    <td class="phpdocumentor-cell">&#039;BATEA&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_APP_DEBUG">APP_DEBUG</a></th>
+                    <td class="phpdocumentor-cell">Activa o desactiva e modo debug.</td>
+                    <td class="phpdocumentor-cell">false</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_APP_ROOT">APP_ROOT</a></th>
+                    <td class="phpdocumentor-cell">Directorio de instalación del proyecto.</td>
+                    <td class="phpdocumentor-cell">&#039;/full/path/to/project/&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_APP_DB">APP_DB</a></th>
+                    <td class="phpdocumentor-cell">Nombre del archivo SQLite3.</td>
+                    <td class="phpdocumentor-cell">&#039;storage/db.sqlite&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_SESSION_LIFETIME">SESSION_LIFETIME</a></th>
+                    <td class="phpdocumentor-cell">Duración de la sesión en milisegundos.</td>
+                    <td class="phpdocumentor-cell">1800000</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_PUBLIC_KEY">PUBLIC_KEY</a></th>
+                    <td class="phpdocumentor-cell">Par de claves, se utilizan para obtener acceso a los servidores remotos
+sin necesidad de especificar una contraseña.</td>
+                    <td class="phpdocumentor-cell">&#039;/full/path/to/project/keys/id_rsa.pub&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_PRIVATE_KEY">PRIVATE_KEY</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">&#039;/full/path/to/project/keys/id_rsa&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_APP_LOG_DIR">APP_LOG_DIR</a></th>
+                    <td class="phpdocumentor-cell">Directorio para guardar los logs.</td>
+                    <td class="phpdocumentor-cell">&#039;storage/logs/&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_APP_BACKUP_DIR">APP_BACKUP_DIR</a></th>
+                    <td class="phpdocumentor-cell">Directorio para guardar las copias de seguridad.</td>
+                    <td class="phpdocumentor-cell">&#039;storage/backups/&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_APP_TIMEZONE">APP_TIMEZONE</a></th>
+                    <td class="phpdocumentor-cell">Zona horaria de la aplicación.</td>
+                    <td class="phpdocumentor-cell">&#039;Europe/Madrid&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_SMTP_SERVER">SMTP_SERVER</a></th>
+                    <td class="phpdocumentor-cell">Parámetros SMTP para el envio de correos.</td>
+                    <td class="phpdocumentor-cell">&#039;smptp.example.com&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_SMTP_SECURE">SMTP_SECURE</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">&#039;tls&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_SMTP_PORT">SMTP_PORT</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">587</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_SMTP_USER">SMTP_USER</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">&#039;user&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_SMTP_PASSWORD">SMTP_PASSWORD</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">&#039;password&#039;</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/davidcmg-batea-Config.html#constant_EMAIL_FROM">EMAIL_FROM</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">&#039;sender@email.com&#039;</td>
+                </tr>
+                                                                                            </table>
+
+                    <section>
+                <h3 class="phpdocumentor-constants__header">Constants</h3>
+                                    <a id="constant_APP_NAME"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">APP_NAME</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">15</span>
+    </aside>
+            <p class="phpdocumentor-summary">Nombre de la aplicación.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$APP_NAME</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;BATEA&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_APP_DEBUG"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">APP_DEBUG</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">20</span>
+    </aside>
+            <p class="phpdocumentor-summary">Activa o desactiva e modo debug.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$APP_DEBUG</span>
+        = <span class="phpdocumentor-signature__default-value">false</span>
+    </code>
+    </article>
+                                    <a id="constant_APP_ROOT"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">APP_ROOT</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">26</span>
+    </aside>
+            <p class="phpdocumentor-summary">Directorio de instalación del proyecto.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$APP_ROOT</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;/full/path/to/project/&#039;</span>
+    </code>
+        <section class="phpdocumentor-description">Importante la barra final, que indica que es un directorio.</section>
+    </article>
+                                    <a id="constant_APP_DB"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">APP_DB</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">31</span>
+    </aside>
+            <p class="phpdocumentor-summary">Nombre del archivo SQLite3.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$APP_DB</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;storage/db.sqlite&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_SESSION_LIFETIME"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">SESSION_LIFETIME</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">36</span>
+    </aside>
+            <p class="phpdocumentor-summary">Duración de la sesión en milisegundos.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$SESSION_LIFETIME</span>
+        = <span class="phpdocumentor-signature__default-value">1800000</span>
+    </code>
+    </article>
+                                    <a id="constant_PUBLIC_KEY"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">PUBLIC_KEY</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">44</span>
+    </aside>
+            <p class="phpdocumentor-summary">Par de claves, se utilizan para obtener acceso a los servidores remotos
+sin necesidad de especificar una contraseña.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$PUBLIC_KEY</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;/full/path/to/project/keys/id_rsa.pub&#039;</span>
+    </code>
+        <section class="phpdocumentor-description">Archivo con la clave pública.
+Archivo con la clave privada.</section>
+    </article>
+                                    <a id="constant_PRIVATE_KEY"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">PRIVATE_KEY</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">45</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$PRIVATE_KEY</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;/full/path/to/project/keys/id_rsa&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_APP_LOG_DIR"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">APP_LOG_DIR</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">51</span>
+    </aside>
+            <p class="phpdocumentor-summary">Directorio para guardar los logs.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$APP_LOG_DIR</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;storage/logs/&#039;</span>
+    </code>
+        <section class="phpdocumentor-description">Importante la barra final, que indica que es un directorio.</section>
+    </article>
+                                    <a id="constant_APP_BACKUP_DIR"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">APP_BACKUP_DIR</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">57</span>
+    </aside>
+            <p class="phpdocumentor-summary">Directorio para guardar las copias de seguridad.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$APP_BACKUP_DIR</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;storage/backups/&#039;</span>
+    </code>
+        <section class="phpdocumentor-description">Importante la barra final, que indica que es un directorio.</section>
+    </article>
+                                    <a id="constant_APP_TIMEZONE"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">APP_TIMEZONE</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">62</span>
+    </aside>
+            <p class="phpdocumentor-summary">Zona horaria de la aplicación.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$APP_TIMEZONE</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;Europe/Madrid&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_SMTP_SERVER"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">SMTP_SERVER</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">67</span>
+    </aside>
+            <p class="phpdocumentor-summary">Parámetros SMTP para el envio de correos.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$SMTP_SERVER</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;smptp.example.com&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_SMTP_SECURE"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">SMTP_SECURE</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">68</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$SMTP_SECURE</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;tls&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_SMTP_PORT"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">SMTP_PORT</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">69</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$SMTP_PORT</span>
+        = <span class="phpdocumentor-signature__default-value">587</span>
+    </code>
+    </article>
+                                    <a id="constant_SMTP_USER"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">SMTP_USER</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">70</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$SMTP_USER</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;user&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_SMTP_PASSWORD"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">SMTP_PASSWORD</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">71</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$SMTP_PASSWORD</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;password&#039;</span>
+    </code>
+    </article>
+                                    <a id="constant_EMAIL_FROM"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">EMAIL_FROM</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="config/Config.sample.php"><a href="../files/config-config-sample.html"><abbr title="config/Config.sample.php">Config.sample.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">72</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$EMAIL_FROM</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;sender@email.com&#039;</span>
+    </code>
+    </article>
+                                            </section>
+        
+        
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

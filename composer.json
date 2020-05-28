@@ -1,0 +1,41 @@
+{
+    "name": "davidcmg/batea",
+    "description": "Gestor de copias de seguridad de rsync para configurar en un VPS. Trabajo final del grado de Informática de la UOC.",
+    "version": "0.1.0",
+    "type": "project",
+    "keywords": [
+        "rsync",
+        "remote",
+        "tasks",
+        "backup",
+        "tfg",
+        "php",
+        "uoc"
+    ],
+    "authors": [
+        {
+            "name": "David Campos",
+            "email": "davidcmg@gmail.com",
+            "homepage": "http://www.davidcmg.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "phpseclib/phpseclib": "~2.0",
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "davidcmg\\batea\\": ["", "src/", "config/"]
+        },
+        "files": ["mix.php"],
+        "exclude-from-classmap": ["tests/"]
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0",
+        "codeception/module-webdriver": "^1.0"
+    }
+}
