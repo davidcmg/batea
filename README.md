@@ -30,22 +30,26 @@
 * [Empezando](#empezando)
   * [Prerrequisitos](#prerrequisitos)
   * [Instalación](#instalación)
-
+* [Licencia](#licencia)
 
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
 
-El presente trabajo, fué realizado como parte del trabajo fin de grado titulado "Gestor de copias de seguridad de rsync para configurar en un VPS" con fines académicos.
+El presente trabajo, fue realizado como parte del trabajo fin de grado titulado "Gestor de copias de seguridad de rsync para configurar en un VPS" con fines académicos.
 
 ### Realizado con
 
 * [PHP](https://www.php.net/)
+* [SQLite](https://www.sqlite.org/index.html)
+* [rsync](https://rsync.samba.org/)
+* [arnapou/jqcron](https://gitlab.com/arnapou/jqcron)
 * [phpseclib/phpseclib](https://github.com/phpseclib/phpseclib)
 * [phpmailer/phpmailer](https://github.com/PHPMailer/PHPMailer)
 * [codeception/codeception](https://github.com/Codeception/Codeception)
-* [rsync](https://rsync.samba.org/)
-* [arnapou/jqcron](https://gitlab.com/arnapou/jqcron)
+* [phpDocumentor](https://github.com/phpDocumentor/phpDocumentor)
+* [Bootstrap](https://getbootstrap.com/)
+* [Boxicons](https://boxicons.com/)
 
 <!-- GETTING STARTED -->
 ## Empezando
@@ -92,3 +96,6 @@ sudo crontab -u www-data -e
 * * * * *  /usr/bin/php /full/path/to/project/batea.cron.php >> /dev/null 2>&1
 ```
 El usuario por defecto es ``admin`` con contraseña ``secret``.
+
+## Licencia
+Distribuido bajo la licencia MIT. Ver [LICENSE.md](LICENSE.md) para más información.
