@@ -14,7 +14,7 @@
     <br />
   <strong>Trabajo Final de Grado:</strong>
     <br />
-    Gestor de copias de seguridad de rsync para configurar en un VPS
+    Gestor de copias de seguridad de rsync para configurar en un Virtual Private Server
     <br />
     <a href="https://davidcmg.com">David Campos</a>
     ·
@@ -36,7 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
 
-El presente trabajo, fue realizado como parte del trabajo fin de grado titulado "Gestor de copias de seguridad de rsync para configurar en un VPS" con fines académicos.
+El presente proyecto, fue realizado con fines académicos como parte del Trabajo Fin de Grado titulado "Gestor de copias de seguridad de Rsync para configurar en un Virtual Private Server".
 
 ### Realizado con
 
@@ -58,7 +58,7 @@ Puedes conseguir una copia de este proyecto siguiendo los siguientes pasos.
 
 ### Prerrequisitos
 
-Este proyecto utiliza composer para administrar dependencias.  
+Este proyecto utiliza Composer para administrar dependencias.  
 Se pueden consultar los pasos a seguir para su instalación en el sitio de [composer](https://getcomposer.org/doc/00-intro.md).  
 
 ### Instalación
@@ -76,7 +76,7 @@ composer install --no-dev
 ```sh
 mv config/Config.sample.php config/Config.php
 ```
-4. Configurar el servidor web para que apunte a el directorio ``public/``
+4. Configurar el servidor web para que apunte al directorio ``public/``
 5. Sería recomendable crear un par de claves para la aplicación.
 ```sh
 cd keys/
